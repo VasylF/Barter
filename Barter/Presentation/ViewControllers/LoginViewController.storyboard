@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ChN-wE-A4K">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="TPD-Ed-4BZ">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="ChN-wE-A4K" customClass="LoginViewController" customModule="Barter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lZy-WD-e3V">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uvK-dk-qGi">
+                                <rect key="frame" x="41.5" y="363" width="331" height="110"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rBI-t9-n2j" customClass="ACFloatingTextfield">
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="50"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9iS-hR-Ccy" customClass="ACFloatingTextfield">
+                                        <rect key="frame" x="0.0" y="60" width="331" height="50"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="9iS-hR-Ccy" firstAttribute="height" secondItem="rBI-t9-n2j" secondAttribute="height" id="chR-E0-Lc8"/>
+                                    <constraint firstAttribute="height" constant="110" id="xIx-Zp-Bjo"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uvK-dk-qGi" firstAttribute="width" secondItem="pyw-CB-jNZ" secondAttribute="width" multiplier="0.8" id="IQI-CV-XJo"/>
+                            <constraint firstItem="uvK-dk-qGi" firstAttribute="centerY" secondItem="pyw-CB-jNZ" secondAttribute="centerY" constant="-35" id="mbq-cP-7dz"/>
+                            <constraint firstItem="uvK-dk-qGi" firstAttribute="centerX" secondItem="pyw-CB-jNZ" secondAttribute="centerX" id="zX3-QT-cfR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pyw-CB-jNZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="rBI-t9-n2j" id="QxU-Tz-y7t"/>
+                        <outlet property="passwordTextField" destination="9iS-hR-Ccy" id="35T-bG-0HB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ywR-Hx-7K1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="110" y="-137"/>
+        </scene>
+    </scenes>
+</document>

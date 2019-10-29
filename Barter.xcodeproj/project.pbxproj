@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		044A1B142360E5C9001E9F2F /* String+PasswordValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A1B132360E5C9001E9F2F /* String+PasswordValidation.swift */; };
+		0480975B234538E90022FB43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480975A234538E90022FB43 /* AppDelegate.swift */; };
+		0480975D234538E90022FB43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480975C234538E90022FB43 /* SceneDelegate.swift */; };
+		04809761234538EA0022FB43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04809760234538EA0022FB43 /* Assets.xcassets */; };
+		04809764234538EA0022FB43 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04809763234538EA0022FB43 /* Preview Assets.xcassets */; };
+		04809767234538EA0022FB43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04809765234538EA0022FB43 /* LaunchScreen.storyboard */; };
+		048097782345396E0022FB43 /* SignInViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048097742345396E0022FB43 /* SignInViewController.storyboard */; };
+		048097792345396E0022FB43 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048097752345396E0022FB43 /* LoginViewController.swift */; };
+		0480977A2345396E0022FB43 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048097762345396E0022FB43 /* SignInViewController.swift */; };
+		0480977B2345396E0022FB43 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048097772345396E0022FB43 /* LoginViewController.storyboard */; };
+		0480977E234539810022FB43 /* UIColor+HEX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480977D234539810022FB43 /* UIColor+HEX.swift */; };
+		048097862345398E0022FB43 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048097802345398E0022FB43 /* Constants.swift */; };
+		048097872345398E0022FB43 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048097822345398E0022FB43 /* Color.swift */; };
+		048097882345398E0022FB43 /* FontRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048097842345398E0022FB43 /* FontRepresentable.swift */; };
+		048097892345398E0022FB43 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048097852345398E0022FB43 /* Font.swift */; };
+		0480978B23453A9E0022FB43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0480978A23453A9E0022FB43 /* GoogleService-Info.plist */; };
+		04CE61BF2364BCDC00F534E9 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE61BE2364BCDC00F534E9 /* UITextField.swift */; };
+		04CE61C22364CA5B00F534E9 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE61C12364CA5B00F534E9 /* Text.swift */; };
+		04CE61C42364CE6000F534E9 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE61C32364CE6000F534E9 /* UIView.swift */; };
+		04CE61C62364E23700F534E9 /* ExtenededPasswordValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE61C52364E23700F534E9 /* ExtenededPasswordValidator.swift */; };
+		04CE61CA2364EDEF00F534E9 /* PasswordValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE61C92364EDEF00F534E9 /* PasswordValidation.swift */; };
+		2D1E982DB47BEBC5842E5ADE /* Pods_Barter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1984B21325F9248D78840817 /* Pods_Barter.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		044A1B132360E5C9001E9F2F /* String+PasswordValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+PasswordValidation.swift"; sourceTree = "<group>"; };
+		04809757234538E90022FB43 /* Barter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Barter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0480975A234538E90022FB43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0480975C234538E90022FB43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		04809760234538EA0022FB43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04809763234538EA0022FB43 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04809766234538EA0022FB43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04809768234538EA0022FB43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		048097742345396E0022FB43 /* SignInViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignInViewController.storyboard; sourceTree = "<group>"; };
+		048097752345396E0022FB43 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		048097762345396E0022FB43 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		048097772345396E0022FB43 /* LoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		0480977D234539810022FB43 /* UIColor+HEX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+HEX.swift"; sourceTree = "<group>"; };
+		048097802345398E0022FB43 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		048097822345398E0022FB43 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		048097842345398E0022FB43 /* FontRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontRepresentable.swift; sourceTree = "<group>"; };
+		048097852345398E0022FB43 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		0480978A23453A9E0022FB43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		04CE61BE2364BCDC00F534E9 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		04CE61C12364CA5B00F534E9 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		04CE61C32364CE6000F534E9 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		04CE61C52364E23700F534E9 /* ExtenededPasswordValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtenededPasswordValidator.swift; sourceTree = "<group>"; };
+		04CE61C92364EDEF00F534E9 /* PasswordValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordValidation.swift; sourceTree = "<group>"; };
+		1984B21325F9248D78840817 /* Pods_Barter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Barter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20F1E742F8809F32F994A564 /* Pods-Barter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Barter.release.xcconfig"; path = "Target Support Files/Pods-Barter/Pods-Barter.release.xcconfig"; sourceTree = "<group>"; };
+		336556BBC5E102006335FA8F /* Pods-Barter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Barter.debug.xcconfig"; path = "Target Support Files/Pods-Barter/Pods-Barter.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04809754234538E90022FB43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D1E982DB47BEBC5842E5ADE /* Pods_Barter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		044A1B102360E52B001E9F2F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		044A1B112360E54A001E9F2F /* SignInViewController */ = {
+			isa = PBXGroup;
+			children = (
+				048097762345396E0022FB43 /* SignInViewController.swift */,
+				048097742345396E0022FB43 /* SignInViewController.storyboard */,
+			);
+			path = SignInViewController;
+			sourceTree = "<group>";
+		};
+		044A1B122360E57D001E9F2F /* LogInViewConroller */ = {
+			isa = PBXGroup;
+			children = (
+				048097752345396E0022FB43 /* LoginViewController.swift */,
+				048097772345396E0022FB43 /* LoginViewController.storyboard */,
+			);
+			name = LogInViewConroller;
+			sourceTree = "<group>";
+		};
+		0480974E234538E80022FB43 = {
+			isa = PBXGroup;
+			children = (
+				04809759234538E90022FB43 /* Barter */,
+				04809758234538E90022FB43 /* Products */,
+				2C98E48E6CFE74A03E588082 /* Pods */,
+				BBCF9B5A1A19A58CC6E67D93 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04809758234538E90022FB43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04809757234538E90022FB43 /* Barter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04809759234538E90022FB43 /* Barter */ = {
+			isa = PBXGroup;
+			children = (
+				044A1B102360E52B001E9F2F /* Common */,
+				0480976E234539150022FB43 /* Presentation */,
+				04809762234538EA0022FB43 /* Preview Content */,
+				04CE61C72364EB7100F534E9 /* Services */,
+				0480976F234539310022FB43 /* Source */,
+				0480977F2345398E0022FB43 /* Constants */,
+				04809770234539480022FB43 /* SupportingFiles */,
+				0480975A234538E90022FB43 /* AppDelegate.swift */,
+				04809760234538EA0022FB43 /* Assets.xcassets */,
+				04809765234538EA0022FB43 /* LaunchScreen.storyboard */,
+				04809768234538EA0022FB43 /* Info.plist */,
+			);
+			path = Barter;
+			sourceTree = "<group>";
+		};
+		04809762234538EA0022FB43 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				04809763234538EA0022FB43 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0480976E234539150022FB43 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				0480975C234538E90022FB43 /* SceneDelegate.swift */,
+				048097732345396E0022FB43 /* ViewControllers */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		0480976F234539310022FB43 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0480977C234539810022FB43 /* Extension */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		04809770234539480022FB43 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0480978A23453A9E0022FB43 /* GoogleService-Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		048097732345396E0022FB43 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				04CE61C82364EDA900F534E9 /* PasswordValidator */,
+				044A1B112360E54A001E9F2F /* SignInViewController */,
+				044A1B122360E57D001E9F2F /* LogInViewConroller */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0480977C234539810022FB43 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0480977D234539810022FB43 /* UIColor+HEX.swift */,
+				04CE61C32364CE6000F534E9 /* UIView.swift */,
+				04CE61BE2364BCDC00F534E9 /* UITextField.swift */,
+				044A1B132360E5C9001E9F2F /* String+PasswordValidation.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		0480977F2345398E0022FB43 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				048097802345398E0022FB43 /* Constants.swift */,
+				04CE61C02364CA2500F534E9 /* Text */,
+				048097812345398E0022FB43 /* Color */,
+				048097832345398E0022FB43 /* Fonts */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		048097812345398E0022FB43 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				048097822345398E0022FB43 /* Color.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		048097832345398E0022FB43 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				048097842345398E0022FB43 /* FontRepresentable.swift */,
+				048097852345398E0022FB43 /* Font.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		04CE61C02364CA2500F534E9 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				04CE61C12364CA5B00F534E9 /* Text.swift */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
+		04CE61C72364EB7100F534E9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		04CE61C82364EDA900F534E9 /* PasswordValidator */ = {
+			isa = PBXGroup;
+			children = (
+				04CE61C52364E23700F534E9 /* ExtenededPasswordValidator.swift */,
+				04CE61C92364EDEF00F534E9 /* PasswordValidation.swift */,
+			);
+			path = PasswordValidator;
+			sourceTree = "<group>";
+		};
+		2C98E48E6CFE74A03E588082 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				336556BBC5E102006335FA8F /* Pods-Barter.debug.xcconfig */,
+				20F1E742F8809F32F994A564 /* Pods-Barter.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BBCF9B5A1A19A58CC6E67D93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1984B21325F9248D78840817 /* Pods_Barter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04809756234538E90022FB43 /* Barter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0480976B234538EA0022FB43 /* Build configuration list for PBXNativeTarget "Barter" */;
+			buildPhases = (
+				F30C11E13EA59581A6F1253A /* [CP] Check Pods Manifest.lock */,
+				04809753234538E90022FB43 /* Sources */,
+				04809754234538E90022FB43 /* Frameworks */,
+				04809755234538E90022FB43 /* Resources */,
+				27C358686B7DD4B04896AAD5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Barter;
+			productName = Barter;
+			productReference = 04809757234538E90022FB43 /* Barter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0480974F234538E80022FB43 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = VasylFuchenko;
+				TargetAttributes = {
+					04809756234538E90022FB43 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 04809752234538E80022FB43 /* Build configuration list for PBXProject "Barter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0480974E234538E80022FB43;
+			productRefGroup = 04809758234538E90022FB43 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04809756234538E90022FB43 /* Barter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04809755234538E90022FB43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04809767234538EA0022FB43 /* LaunchScreen.storyboard in Resources */,
+				048097782345396E0022FB43 /* SignInViewController.storyboard in Resources */,
+				0480978B23453A9E0022FB43 /* GoogleService-Info.plist in Resources */,
+				0480977B2345396E0022FB43 /* LoginViewController.storyboard in Resources */,
+				04809764234538EA0022FB43 /* Preview Assets.xcassets in Resources */,
+				04809761234538EA0022FB43 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27C358686B7DD4B04896AAD5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Barter/Pods-Barter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Barter/Pods-Barter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Barter/Pods-Barter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F30C11E13EA59581A6F1253A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Barter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04809753234538E90022FB43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0480977E234539810022FB43 /* UIColor+HEX.swift in Sources */,
+				048097892345398E0022FB43 /* Font.swift in Sources */,
+				0480975B234538E90022FB43 /* AppDelegate.swift in Sources */,
+				04CE61BF2364BCDC00F534E9 /* UITextField.swift in Sources */,
+				0480975D234538E90022FB43 /* SceneDelegate.swift in Sources */,
+				04CE61CA2364EDEF00F534E9 /* PasswordValidation.swift in Sources */,
+				0480977A2345396E0022FB43 /* SignInViewController.swift in Sources */,
+				048097792345396E0022FB43 /* LoginViewController.swift in Sources */,
+				04CE61C62364E23700F534E9 /* ExtenededPasswordValidator.swift in Sources */,
+				04CE61C22364CA5B00F534E9 /* Text.swift in Sources */,
+				048097862345398E0022FB43 /* Constants.swift in Sources */,
+				04CE61C42364CE6000F534E9 /* UIView.swift in Sources */,
+				048097872345398E0022FB43 /* Color.swift in Sources */,
+				044A1B142360E5C9001E9F2F /* String+PasswordValidation.swift in Sources */,
+				048097882345398E0022FB43 /* FontRepresentable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04809765234538EA0022FB43 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04809766234538EA0022FB43 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04809769234538EA0022FB43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0480976A234538EA0022FB43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0480976C234538EA0022FB43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 336556BBC5E102006335FA8F /* Pods-Barter.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Barter/Preview Content\"";
+				DEVELOPMENT_TEAM = G65925GU9V;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Barter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.VasylFuchenko.Barter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0480976D234538EA0022FB43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20F1E742F8809F32F994A564 /* Pods-Barter.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Barter/Preview Content\"";
+				DEVELOPMENT_TEAM = G65925GU9V;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Barter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.VasylFuchenko.Barter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04809752234538E80022FB43 /* Build configuration list for PBXProject "Barter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04809769234538EA0022FB43 /* Debug */,
+				0480976A234538EA0022FB43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0480976B234538EA0022FB43 /* Build configuration list for PBXNativeTarget "Barter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0480976C234538EA0022FB43 /* Debug */,
+				0480976D234538EA0022FB43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0480974F234538E80022FB43 /* Project object */;
+}
