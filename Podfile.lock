@@ -1,5 +1,4 @@
 PODS:
-  - ACFloatingTextfield-Swift (1.8)
   - Firebase/Auth (6.9.0):
     - Firebase/CoreOnly
     - FirebaseAuth (~> 6.2.3)
@@ -88,17 +87,19 @@ PODS:
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
+  - RSFloatInputView (1.1.0)
+  - TailoredFloatingLabelTextInput (1.0.0)
 
 DEPENDENCIES:
-  - ACFloatingTextfield-Swift (~> 1.8)
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
+  - RSFloatInputView
+  - TailoredFloatingLabelTextInput (~> 1.0)
 
 SPEC REPOS:
   trunk:
-    - ACFloatingTextfield-Swift
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -116,9 +117,10 @@ SPEC REPOS:
     - GTMSessionFetcher
     - leveldb-library
     - nanopb
+    - RSFloatInputView
+    - TailoredFloatingLabelTextInput
 
 SPEC CHECKSUMS:
-  ACFloatingTextfield-Swift: c3212cef9548ae58fa914ea1c26a2f9a4f7cd7df
   Firebase: 2d750c54cda57d5a6ae31212cfe5cc813c6be7e4
   FirebaseAnalytics: 5d9ccbf46ed25d3ec9304d263f85bddf1e93e2d2
   FirebaseAuth: e7f86c2dfc57281cd01f7da5e4b40e01e4510a4a
@@ -136,7 +138,9 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 61bb0f61a4cb560030f1222021178008a5727a23
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  RSFloatInputView: 3899803dec34b7dbe04c87ea4c4ea69eca210f9d
+  TailoredFloatingLabelTextInput: b39a16403f4edcb65028981b11a4d58f8ddab929
 
-PODFILE CHECKSUM: 29de25ab5d26bc6fdcee86f07afd5715743d8555
+PODFILE CHECKSUM: c7b7486ff282bbf679d9ae027c5d38b09b7dec34
 
 COCOAPODS: 1.8.1

@@ -10,5 +10,4 @@ target 'Barter' do
     pod 'Firebase/Auth'
     pod 'Firebase/Database'
     pod 'Firebase/Storage'
-    pod 'ACFloatingTextfield-Swift', '~> 1.8'
 end

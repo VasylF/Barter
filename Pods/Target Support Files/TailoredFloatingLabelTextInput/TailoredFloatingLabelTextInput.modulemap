@@ -1,0 +1,6 @@
+framework module TailoredFloatingLabelTextInput {
+  umbrella header "TailoredFloatingLabelTextInput-umbrella.h"
+
+  export *
+  module * { export * }
+}

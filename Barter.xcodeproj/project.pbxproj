@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040C7D64236F782300E2865D /* FloatLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C7D63236F782300E2865D /* FloatLabelTextField.swift */; };
 		044A1B142360E5C9001E9F2F /* String+PasswordValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A1B132360E5C9001E9F2F /* String+PasswordValidation.swift */; };
 		0480975B234538E90022FB43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480975A234538E90022FB43 /* AppDelegate.swift */; };
 		0480975D234538E90022FB43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480975C234538E90022FB43 /* SceneDelegate.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040C7D63236F782300E2865D /* FloatLabelTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatLabelTextField.swift; sourceTree = "<group>"; };
 		044A1B132360E5C9001E9F2F /* String+PasswordValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+PasswordValidation.swift"; sourceTree = "<group>"; };
 		04809757234538E90022FB43 /* Barter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Barter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0480975A234538E90022FB43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,8 @@
 		044A1B102360E52B001E9F2F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				040C7D63236F782300E2865D /* FloatLabelTextField.swift */,
+				04CE61C82364EDA900F534E9 /* PasswordValidator */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -169,7 +173,6 @@
 		048097732345396E0022FB43 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				04CE61C82364EDA900F534E9 /* PasswordValidator */,
 				044A1B112360E54A001E9F2F /* SignInViewController */,
 				044A1B122360E57D001E9F2F /* LogInViewConroller */,
 			);
@@ -377,6 +380,7 @@
 				0480977E234539810022FB43 /* UIColor+HEX.swift in Sources */,
 				048097892345398E0022FB43 /* Font.swift in Sources */,
 				0480975B234538E90022FB43 /* AppDelegate.swift in Sources */,
+				040C7D64236F782300E2865D /* FloatLabelTextField.swift in Sources */,
 				04CE61BF2364BCDC00F534E9 /* UITextField.swift in Sources */,
 				0480975D234538E90022FB43 /* SceneDelegate.swift in Sources */,
 				04CE61CA2364EDEF00F534E9 /* PasswordValidation.swift in Sources */,

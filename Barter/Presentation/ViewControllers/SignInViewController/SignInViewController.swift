@@ -8,7 +8,6 @@
 
 import UIKit
 import Firebase
-import ACFloatingTextfield_Swift
 
 private typealias Const = Constants.Text.SignInViewController
 
@@ -21,10 +20,10 @@ private enum TextFieldType {
 
 class SignInViewController: UIViewController {
     // MARK: UITextFields
-    @IBOutlet private weak var firstNameTextField: ACFloatingTextfield!
-    @IBOutlet private weak var lastNameTextField: ACFloatingTextfield!
-    @IBOutlet private weak var emailTextField: ACFloatingTextfield!
-    @IBOutlet private weak var passwordTextField: ACFloatingTextfield!
+    @IBOutlet private weak var firstNameTextField: FloatLabelTextField!
+    @IBOutlet private weak var lastNameTextField: FloatLabelTextField!
+    @IBOutlet private weak var emailTextField: FloatLabelTextField!
+    @IBOutlet private weak var passwordTextField: FloatLabelTextField!
     
     @IBOutlet private weak var signInButton: UIButton!
     @IBOutlet private weak var stackView: UIStackView!
@@ -39,7 +38,6 @@ class SignInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configureTextFields()
     }
     
     @IBAction func signInButtonPressed(_ sender: Any) {
@@ -85,11 +83,31 @@ class SignInViewController: UIViewController {
             shouldFailSignIn = true
         }
 
-        guard shouldFailSignIn else { return }
-        
-        Auth.auth().createUser(withEmail: "", password: "") { (user, error) in
-            
+        guard !shouldFailSignIn else { return }
+        Auth.auth().createUser(withEmail: email, password: password) { [weak self] (user, error) in
+            var message: String = ""
+            if let user = user {
+                let changeRequest = user.user.createProfileChangeRequest()
+                changeRequest.displayName = "\(firstName) \(lastName)"
+                changeRequest.commitChanges { error in
+                    guard let error = error else {
+                        message = "\(user.user.displayName ?? "User") was sucessfully logged in."
+                        self?.showAlertWith(message)
+                        return
+                    }
+                    message = error.localizedDescription
+                }
+            } else {
+                message = "There was an error.\n\(error?.localizedDescription ?? "")"
+                self?.showAlertWith(message)
+            }
         }
+    }
+    
+    func showAlertWith(_ message: String) {
+        let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        present(alertController, animated: true, completion: nil)
     }
 }
 
@@ -104,13 +122,6 @@ private extension SignInViewController {
         }
     }
     
-    func configureTextFields() {
-        firstNameTextField.configureTextField()
-        lastNameTextField.configureTextField()
-        emailTextField.configureTextField()
-        passwordTextField.configureTextField()
-    }
-    
     func hideAndClearHintLabel() {
         emailHintLabel.text = ""
         passwordHintLabel.text = ""
@@ -121,10 +132,3 @@ private extension SignInViewController {
     }
 }
 
-extension ACFloatingTextfield {
-    func configureTextField() {
-//        borderStyle = .line
-//        selectedLineColor = .orange
-//        textColor = .brown
-    }
-}

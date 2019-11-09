@@ -7,17 +7,17 @@
 //
 import UIKit
 import SwiftUI
-import ACFloatingTextfield_Swift
+import RSFloatInputView
 
 final class LoginViewController: UIViewController {
     
-    @IBOutlet weak var emailTextField: ACFloatingTextfield!
-    @IBOutlet weak var passwordTextField: ACFloatingTextfield!
+    @IBOutlet weak var emailTextField: RSFloatInputView!
+    @IBOutlet weak var passwordTextField: RSFloatInputView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        emailTextField.configure()
-        passwordTextField.configure()
+//        emailTextField.configure()
+//        passwordTextField.configure()
     }
     
     private func configureTextFields() {

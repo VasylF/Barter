@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double ACFloatingTextfield_SwiftVersionNumber;
-FOUNDATION_EXPORT const unsigned char ACFloatingTextfield_SwiftVersionString[];
+FOUNDATION_EXPORT double TailoredFloatingLabelTextInputVersionNumber;
+FOUNDATION_EXPORT const unsigned char TailoredFloatingLabelTextInputVersionString[];
 
