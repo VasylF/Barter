@@ -38,6 +38,7 @@ class SignInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        hideKeyboardOnTap()
     }
     
     @IBAction func signInButtonPressed(_ sender: Any) {
