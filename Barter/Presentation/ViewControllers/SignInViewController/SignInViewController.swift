@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-private typealias Const = Constants.Text.SignInViewController
+private typealias Const = K.Text.SignInViewController
 
 private enum TextFieldType {
     case firstName

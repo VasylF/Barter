@@ -21,15 +21,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // Create the SwiftUI view that provides the window contents.
         window = UIWindow(frame: UIScreen.main.bounds)
-        let storyBoard = UIStoryboard(name: "SignInViewController", bundle: nil)
-        
-        let loginVC = storyBoard.instantiateViewController(identifier: "SignInViewController") as? SignInViewController
+        // MARK: - Sign In
+//        let storyBoard = UIStoryboard(name: "SignInViewController", bundle: nil)
+//        let signIn = storyBoard.instantiateViewController(identifier: "SignInViewController") as? SignInViewController
+        // MARK: - Log In
+        let storyboard = UIStoryboard(name: "LoginViewController", bundle: nil)
+        let loginVC = storyboard.instantiateViewController(identifier: "LoginViewController") as? LoginViewController
         
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             self.window = window
             window.rootViewController = loginVC
+//            window.rootViewController = signIn
             
             window.makeKeyAndVisible()
         }
