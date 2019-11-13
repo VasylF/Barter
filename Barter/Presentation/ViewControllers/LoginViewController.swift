@@ -65,6 +65,13 @@ final class LoginViewController: UIViewController {
         
     }
     
+    @IBAction private func resetPasswordButtonPressed(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "ResetPassword", bundle: nil)
+        let resetPassword = storyboard.instantiateViewController(identifier: "ResetPasswordViewController") as? ResetPasswordViewController
+        present(resetPassword!, animated: true, completion: nil)
+    }
+    
+    
     private func hideHintLabels() {
         emailHintMessage.hide()
         passwordHintMessage.hide()

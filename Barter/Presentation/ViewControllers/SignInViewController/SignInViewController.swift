@@ -41,7 +41,7 @@ class SignInViewController: UIViewController {
         hideKeyboardOnTap()
     }
     
-    @IBAction func signInButtonPressed(_ sender: Any) {
+    @IBAction private func signInButtonPressed(_ sender: Any) {
         hideAndClearHintLabel()
         let firstName = firstNameTextField.text ?? ""
         let lastName = lastNameTextField.text ?? ""

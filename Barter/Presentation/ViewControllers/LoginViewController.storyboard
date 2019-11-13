@@ -11,12 +11,12 @@
         <scene sceneID="TPD-Ed-4BZ">
             <objects>
                 <viewController storyboardIdentifier="LoginViewController" id="ChN-wE-A4K" customClass="LoginViewController" customModule="Barter" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lZy-WD-e3V">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="lZy-WD-e3V">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2jV-Sj-OnJ">
-                                <rect key="frame" x="10.5" y="343" width="393" height="170"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2jV-Sj-OnJ">
+                                <rect key="frame" x="10.5" y="313" width="393" height="230"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LXd-le-SrQ" customClass="FloatLabelTextField" customModule="Barter" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
@@ -43,7 +43,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please, enter your password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fM0-fO-a4S">
-                                        <rect key="frame" x="0.0" y="135" width="393" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="155" width="393" height="0.0"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -59,10 +59,21 @@
                                             <action selector="logInButtonPressed:" destination="ChN-wE-A4K" eventType="touchUpInside" id="ZNG-2Y-zUf"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cnv-h5-SEo">
+                                        <rect key="frame" x="0.0" y="180" width="393" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Reset password">
+                                            <color key="titleColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="resetPasswordButtonPressed:" destination="ChN-wE-A4K" eventType="touchUpInside" id="E3d-om-GOx"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="L6v-WS-GPB" firstAttribute="height" secondItem="bvN-vZ-ffF" secondAttribute="height" id="14p-B5-2xM"/>
                                     <constraint firstItem="bvN-vZ-ffF" firstAttribute="height" secondItem="LXd-le-SrQ" secondAttribute="height" id="O7f-Ob-Uz3"/>
+                                    <constraint firstItem="Cnv-h5-SEo" firstAttribute="height" secondItem="L6v-WS-GPB" secondAttribute="height" id="PZe-f1-LZ9"/>
                                     <constraint firstItem="FWz-xu-b21" firstAttribute="height" secondItem="fM0-fO-a4S" secondAttribute="height" id="b08-Fq-GHD"/>
                                 </constraints>
                             </stackView>
@@ -70,7 +81,7 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="2jV-Sj-OnJ" firstAttribute="centerY" secondItem="lZy-WD-e3V" secondAttribute="centerY" constant="-20" id="3cj-cG-XxE"/>
-                            <constraint firstItem="2jV-Sj-OnJ" firstAttribute="width" secondItem="pyw-CB-jNZ" secondAttribute="width" multiplier="0.95" id="c1B-Uy-bNJ"/>
+                            <constraint firstItem="2jV-Sj-OnJ" firstAttribute="width" secondItem="pyw-CB-jNZ" secondAttribute="width" multiplier="0.95" id="Uuf-ii-Vdc"/>
                             <constraint firstItem="2jV-Sj-OnJ" firstAttribute="centerX" secondItem="lZy-WD-e3V" secondAttribute="centerX" id="l95-Iu-cFk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pyw-CB-jNZ"/>
