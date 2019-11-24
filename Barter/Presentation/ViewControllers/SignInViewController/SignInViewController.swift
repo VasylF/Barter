@@ -18,7 +18,7 @@ private enum TextFieldType {
     case password
 }
 
-class SignInViewController: UIViewController {
+class SignInViewController: UIViewController, Storyboarded {
     // MARK: UITextFields
     @IBOutlet private weak var firstNameTextField: FloatLabelTextField!
     @IBOutlet private weak var lastNameTextField: FloatLabelTextField!
@@ -34,6 +34,7 @@ class SignInViewController: UIViewController {
     @IBOutlet private weak var emailHintLabel: UILabel!
     @IBOutlet private weak var passwordHintLabel: UILabel!
     
+    weak var coordinator: AuthenticationCoordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()

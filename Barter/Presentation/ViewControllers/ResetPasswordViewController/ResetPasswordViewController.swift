@@ -9,9 +9,10 @@
 import UIKit
 import Firebase
 
-class ResetPasswordViewController: UIViewController {
-    
+class ResetPasswordViewController: UIViewController, Storyboarded {
     @IBOutlet private weak var emailTextField: FloatLabelTextField!
+    
+    weak var coordinator: AuthenticationCoordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()

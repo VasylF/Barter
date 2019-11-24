@@ -11,7 +11,7 @@
 		040DE7502377654A00618887 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040DE74F2377654A00618887 /* UIViewController.swift */; };
 		044A1B142360E5C9001E9F2F /* String+PasswordValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A1B132360E5C9001E9F2F /* String+PasswordValidation.swift */; };
 		047F3F7D237C92B500B0CCA4 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047F3F7C237C92B500B0CCA4 /* ResetPasswordViewController.swift */; };
-		047F3F80237C92FD00B0CCA4 /* ResetPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047F3F7F237C92FD00B0CCA4 /* ResetPassword.storyboard */; };
+		047F3F80237C92FD00B0CCA4 /* ResetPasswordViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047F3F7F237C92FD00B0CCA4 /* ResetPasswordViewController.storyboard */; };
 		0480975B234538E90022FB43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480975A234538E90022FB43 /* AppDelegate.swift */; };
 		0480975D234538E90022FB43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480975C234538E90022FB43 /* SceneDelegate.swift */; };
 		04809761234538EA0022FB43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04809760234538EA0022FB43 /* Assets.xcassets */; };
@@ -27,12 +27,17 @@
 		048097882345398E0022FB43 /* FontRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048097842345398E0022FB43 /* FontRepresentable.swift */; };
 		048097892345398E0022FB43 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048097852345398E0022FB43 /* Font.swift */; };
 		0480978B23453A9E0022FB43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0480978A23453A9E0022FB43 /* GoogleService-Info.plist */; };
+		049E4E60238AC42E007DF3E3 /* AuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E4E5F238AC42E007DF3E3 /* AuthenticationCoordinator.swift */; };
+		049E4E62238AC469007DF3E3 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E4E61238AC469007DF3E3 /* Coordinator.swift */; };
+		049E4E65238AC7A2007DF3E3 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E4E64238AC7A2007DF3E3 /* Storyboarded.swift */; };
+		049E4E68238AF416007DF3E3 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E4E67238AF416007DF3E3 /* HomeScreenViewController.swift */; };
+		049E4E6A238AF438007DF3E3 /* HomeScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049E4E69238AF438007DF3E3 /* HomeScreenViewController.storyboard */; };
 		04CE61BF2364BCDC00F534E9 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE61BE2364BCDC00F534E9 /* UITextField.swift */; };
 		04CE61C22364CA5B00F534E9 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE61C12364CA5B00F534E9 /* Text.swift */; };
 		04CE61C42364CE6000F534E9 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE61C32364CE6000F534E9 /* UIView.swift */; };
 		04CE61C62364E23700F534E9 /* ExtenededPasswordValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE61C52364E23700F534E9 /* ExtenededPasswordValidator.swift */; };
 		04CE61CA2364EDEF00F534E9 /* PasswordValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE61C92364EDEF00F534E9 /* PasswordValidation.swift */; };
-		2D1E982DB47BEBC5842E5ADE /* Pods_Barter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1984B21325F9248D78840817 /* Pods_Barter.framework */; };
+		92384BA5C66F01B94C12EAE7 /* Pods_Barter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75798B9D348173198AB3974B /* Pods_Barter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +45,7 @@
 		040DE74F2377654A00618887 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		044A1B132360E5C9001E9F2F /* String+PasswordValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+PasswordValidation.swift"; sourceTree = "<group>"; };
 		047F3F7C237C92B500B0CCA4 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
-		047F3F7F237C92FD00B0CCA4 /* ResetPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResetPassword.storyboard; sourceTree = "<group>"; };
+		047F3F7F237C92FD00B0CCA4 /* ResetPasswordViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResetPasswordViewController.storyboard; sourceTree = "<group>"; };
 		04809757234538E90022FB43 /* Barter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Barter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0480975A234538E90022FB43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0480975C234538E90022FB43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,14 +63,19 @@
 		048097842345398E0022FB43 /* FontRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontRepresentable.swift; sourceTree = "<group>"; };
 		048097852345398E0022FB43 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		0480978A23453A9E0022FB43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		049E4E5F238AC42E007DF3E3 /* AuthenticationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinator.swift; sourceTree = "<group>"; };
+		049E4E61238AC469007DF3E3 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		049E4E64238AC7A2007DF3E3 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		049E4E67238AF416007DF3E3 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		049E4E69238AF438007DF3E3 /* HomeScreenViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeScreenViewController.storyboard; sourceTree = "<group>"; };
 		04CE61BE2364BCDC00F534E9 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		04CE61C12364CA5B00F534E9 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 		04CE61C32364CE6000F534E9 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		04CE61C52364E23700F534E9 /* ExtenededPasswordValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtenededPasswordValidator.swift; sourceTree = "<group>"; };
 		04CE61C92364EDEF00F534E9 /* PasswordValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordValidation.swift; sourceTree = "<group>"; };
-		1984B21325F9248D78840817 /* Pods_Barter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Barter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		20F1E742F8809F32F994A564 /* Pods-Barter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Barter.release.xcconfig"; path = "Target Support Files/Pods-Barter/Pods-Barter.release.xcconfig"; sourceTree = "<group>"; };
-		336556BBC5E102006335FA8F /* Pods-Barter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Barter.debug.xcconfig"; path = "Target Support Files/Pods-Barter/Pods-Barter.debug.xcconfig"; sourceTree = "<group>"; };
+		75798B9D348173198AB3974B /* Pods_Barter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Barter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFC8242630FA690C6478722C /* Pods-Barter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Barter.release.xcconfig"; path = "Target Support Files/Pods-Barter/Pods-Barter.release.xcconfig"; sourceTree = "<group>"; };
+		C9864BBBF0B9039AD325E6C9 /* Pods-Barter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Barter.debug.xcconfig"; path = "Target Support Files/Pods-Barter/Pods-Barter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D1E982DB47BEBC5842E5ADE /* Pods_Barter.framework in Frameworks */,
+				92384BA5C66F01B94C12EAE7 /* Pods_Barter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,8 +93,9 @@
 		044A1B102360E52B001E9F2F /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				040C7D63236F782300E2865D /* FloatLabelTextField.swift */,
+				049E4E63238AC748007DF3E3 /* Protocols */,
 				04CE61C82364EDA900F534E9 /* PasswordValidator */,
+				040C7D63236F782300E2865D /* FloatLabelTextField.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -107,13 +118,13 @@
 			name = LogInViewConroller;
 			sourceTree = "<group>";
 		};
-		047F3F7E237C92CB00B0CCA4 /* ResePasswordViewController */ = {
+		047F3F7E237C92CB00B0CCA4 /* ResetPasswordViewController */ = {
 			isa = PBXGroup;
 			children = (
 				047F3F7C237C92B500B0CCA4 /* ResetPasswordViewController.swift */,
-				047F3F7F237C92FD00B0CCA4 /* ResetPassword.storyboard */,
+				047F3F7F237C92FD00B0CCA4 /* ResetPasswordViewController.storyboard */,
 			);
-			path = ResePasswordViewController;
+			path = ResetPasswordViewController;
 			sourceTree = "<group>";
 		};
 		0480974E234538E80022FB43 = {
@@ -122,7 +133,7 @@
 				04809759234538E90022FB43 /* Barter */,
 				04809758234538E90022FB43 /* Products */,
 				2C98E48E6CFE74A03E588082 /* Pods */,
-				BBCF9B5A1A19A58CC6E67D93 /* Frameworks */,
+				41FC902A98358654D8F675BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,6 +174,7 @@
 		0480976E234539150022FB43 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				049E4E5E238AC412007DF3E3 /* Coordinators */,
 				0480975C234538E90022FB43 /* SceneDelegate.swift */,
 				048097732345396E0022FB43 /* ViewControllers */,
 			);
@@ -188,7 +200,8 @@
 		048097732345396E0022FB43 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				047F3F7E237C92CB00B0CCA4 /* ResePasswordViewController */,
+				049E4E66238AF3FD007DF3E3 /* HomeScreen */,
+				047F3F7E237C92CB00B0CCA4 /* ResetPasswordViewController */,
 				044A1B112360E54A001E9F2F /* SignInViewController */,
 				044A1B122360E57D001E9F2F /* LogInViewConroller */,
 			);
@@ -235,6 +248,32 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		049E4E5E238AC412007DF3E3 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				049E4E5F238AC42E007DF3E3 /* AuthenticationCoordinator.swift */,
+			);
+			name = Coordinators;
+			sourceTree = "<group>";
+		};
+		049E4E63238AC748007DF3E3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				049E4E61238AC469007DF3E3 /* Coordinator.swift */,
+				049E4E64238AC7A2007DF3E3 /* Storyboarded.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		049E4E66238AF3FD007DF3E3 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				049E4E67238AF416007DF3E3 /* HomeScreenViewController.swift */,
+				049E4E69238AF438007DF3E3 /* HomeScreenViewController.storyboard */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
 		04CE61C02364CA2500F534E9 /* Text */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,16 +301,16 @@
 		2C98E48E6CFE74A03E588082 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				336556BBC5E102006335FA8F /* Pods-Barter.debug.xcconfig */,
-				20F1E742F8809F32F994A564 /* Pods-Barter.release.xcconfig */,
+				C9864BBBF0B9039AD325E6C9 /* Pods-Barter.debug.xcconfig */,
+				BFC8242630FA690C6478722C /* Pods-Barter.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		BBCF9B5A1A19A58CC6E67D93 /* Frameworks */ = {
+		41FC902A98358654D8F675BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1984B21325F9248D78840817 /* Pods_Barter.framework */,
+				75798B9D348173198AB3974B /* Pods_Barter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -283,11 +322,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0480976B234538EA0022FB43 /* Build configuration list for PBXNativeTarget "Barter" */;
 			buildPhases = (
-				F30C11E13EA59581A6F1253A /* [CP] Check Pods Manifest.lock */,
+				B7334687C66BC50FA26BB3B3 /* [CP] Check Pods Manifest.lock */,
 				04809753234538E90022FB43 /* Sources */,
 				04809754234538E90022FB43 /* Frameworks */,
 				04809755234538E90022FB43 /* Resources */,
-				27C358686B7DD4B04896AAD5 /* [CP] Embed Pods Frameworks */,
+				E2583A50BBE4858A7F26CAA5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -337,7 +376,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				04809767234538EA0022FB43 /* LaunchScreen.storyboard in Resources */,
-				047F3F80237C92FD00B0CCA4 /* ResetPassword.storyboard in Resources */,
+				047F3F80237C92FD00B0CCA4 /* ResetPasswordViewController.storyboard in Resources */,
+				049E4E6A238AF438007DF3E3 /* HomeScreenViewController.storyboard in Resources */,
 				048097782345396E0022FB43 /* SignInViewController.storyboard in Resources */,
 				0480978B23453A9E0022FB43 /* GoogleService-Info.plist in Resources */,
 				0480977B2345396E0022FB43 /* LoginViewController.storyboard in Resources */,
@@ -349,24 +389,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		27C358686B7DD4B04896AAD5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Barter/Pods-Barter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Barter/Pods-Barter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Barter/Pods-Barter-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F30C11E13EA59581A6F1253A /* [CP] Check Pods Manifest.lock */ = {
+		B7334687C66BC50FA26BB3B3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -388,6 +411,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E2583A50BBE4858A7F26CAA5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Barter/Pods-Barter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Barter/Pods-Barter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Barter/Pods-Barter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -400,6 +440,7 @@
 				0480975B234538E90022FB43 /* AppDelegate.swift in Sources */,
 				040C7D64236F782300E2865D /* FloatLabelTextField.swift in Sources */,
 				04CE61BF2364BCDC00F534E9 /* UITextField.swift in Sources */,
+				049E4E68238AF416007DF3E3 /* HomeScreenViewController.swift in Sources */,
 				0480975D234538E90022FB43 /* SceneDelegate.swift in Sources */,
 				04CE61CA2364EDEF00F534E9 /* PasswordValidation.swift in Sources */,
 				0480977A2345396E0022FB43 /* SignInViewController.swift in Sources */,
@@ -407,12 +448,15 @@
 				047F3F7D237C92B500B0CCA4 /* ResetPasswordViewController.swift in Sources */,
 				048097792345396E0022FB43 /* LoginViewController.swift in Sources */,
 				04CE61C62364E23700F534E9 /* ExtenededPasswordValidator.swift in Sources */,
+				049E4E62238AC469007DF3E3 /* Coordinator.swift in Sources */,
 				04CE61C22364CA5B00F534E9 /* Text.swift in Sources */,
 				048097862345398E0022FB43 /* Constants.swift in Sources */,
+				049E4E60238AC42E007DF3E3 /* AuthenticationCoordinator.swift in Sources */,
 				04CE61C42364CE6000F534E9 /* UIView.swift in Sources */,
 				048097872345398E0022FB43 /* Color.swift in Sources */,
 				044A1B142360E5C9001E9F2F /* String+PasswordValidation.swift in Sources */,
 				048097882345398E0022FB43 /* FontRepresentable.swift in Sources */,
+				049E4E65238AC7A2007DF3E3 /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,7 +590,7 @@
 		};
 		0480976C234538EA0022FB43 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 336556BBC5E102006335FA8F /* Pods-Barter.debug.xcconfig */;
+			baseConfigurationReference = C9864BBBF0B9039AD325E6C9 /* Pods-Barter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -567,7 +611,7 @@
 		};
 		0480976D234538EA0022FB43 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 20F1E742F8809F32F994A564 /* Pods-Barter.release.xcconfig */;
+			baseConfigurationReference = BFC8242630FA690C6478722C /* Pods-Barter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

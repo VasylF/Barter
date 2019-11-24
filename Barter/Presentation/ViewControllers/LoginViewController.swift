@@ -9,7 +9,7 @@ import UIKit
 import SwiftUI
 import Firebase
 
-final class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, Storyboarded {
     
     // MARK: UITextFields
     @IBOutlet private weak var emailTextField: FloatLabelTextField!
@@ -21,6 +21,8 @@ final class LoginViewController: UIViewController {
     // MARK: UITextFields' label
     @IBOutlet private weak var emailHintMessage: UILabel!
     @IBOutlet private weak var passwordHintMessage: UILabel!
+    
+    weak var coordinator: AuthenticationCoordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,11 +68,12 @@ final class LoginViewController: UIViewController {
     }
     
     @IBAction private func resetPasswordButtonPressed(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "ResetPassword", bundle: nil)
-        let resetPassword = storyboard.instantiateViewController(identifier: "ResetPasswordViewController") as? ResetPasswordViewController
-        present(resetPassword!, animated: true, completion: nil)
+        coordinator?.resetPassword()
     }
     
+    @IBAction private func createAccountButtonPressed(_ sender: Any) {
+        coordinator?.createAccount()
+    }
     
     private func hideHintLabels() {
         emailHintMessage.hide()
