@@ -10,7 +10,7 @@
         <!--Home Screen View Controller-->
         <scene sceneID="iIv-ne-tEn">
             <objects>
-                <viewController id="oAq-Iv-jfn" customClass="HomeScreenViewController" customModule="Barter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeScreenViewController" id="oAq-Iv-jfn" customClass="HomeScreenViewController" customModule="Barter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GuN-rg-g74">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

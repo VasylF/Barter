@@ -12,12 +12,12 @@ import SwiftUI
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    var coordinator: AuthenticationCoordinator?
+    var coordinator: RootCoordinator?
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         let navController = UINavigationController()
-        coordinator = AuthenticationCoordinator(navController: navController)
+        coordinator = RootCoordinator(navController)
         coordinator?.start()
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)

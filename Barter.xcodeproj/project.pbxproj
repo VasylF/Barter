@@ -10,6 +10,8 @@
 		040C7D64236F782300E2865D /* FloatLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C7D63236F782300E2865D /* FloatLabelTextField.swift */; };
 		040DE7502377654A00618887 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040DE74F2377654A00618887 /* UIViewController.swift */; };
 		044A1B142360E5C9001E9F2F /* String+PasswordValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A1B132360E5C9001E9F2F /* String+PasswordValidation.swift */; };
+		04652DD4238DDFA30069452B /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04652DD3238DDFA30069452B /* RootCoordinator.swift */; };
+		04652DD6238F2A950069452B /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04652DD5238F2A950069452B /* TabBarCoordinator.swift */; };
 		047F3F7D237C92B500B0CCA4 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047F3F7C237C92B500B0CCA4 /* ResetPasswordViewController.swift */; };
 		047F3F80237C92FD00B0CCA4 /* ResetPasswordViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047F3F7F237C92FD00B0CCA4 /* ResetPasswordViewController.storyboard */; };
 		0480975B234538E90022FB43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480975A234538E90022FB43 /* AppDelegate.swift */; };
@@ -44,6 +46,8 @@
 		040C7D63236F782300E2865D /* FloatLabelTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatLabelTextField.swift; sourceTree = "<group>"; };
 		040DE74F2377654A00618887 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		044A1B132360E5C9001E9F2F /* String+PasswordValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+PasswordValidation.swift"; sourceTree = "<group>"; };
+		04652DD3238DDFA30069452B /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
+		04652DD5238F2A950069452B /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		047F3F7C237C92B500B0CCA4 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		047F3F7F237C92FD00B0CCA4 /* ResetPasswordViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResetPasswordViewController.storyboard; sourceTree = "<group>"; };
 		04809757234538E90022FB43 /* Barter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Barter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -251,6 +255,8 @@
 		049E4E5E238AC412007DF3E3 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				04652DD3238DDFA30069452B /* RootCoordinator.swift */,
+				04652DD5238F2A950069452B /* TabBarCoordinator.swift */,
 				049E4E5F238AC42E007DF3E3 /* AuthenticationCoordinator.swift */,
 			);
 			name = Coordinators;
@@ -437,12 +443,14 @@
 			files = (
 				0480977E234539810022FB43 /* UIColor+HEX.swift in Sources */,
 				048097892345398E0022FB43 /* Font.swift in Sources */,
+				04652DD6238F2A950069452B /* TabBarCoordinator.swift in Sources */,
 				0480975B234538E90022FB43 /* AppDelegate.swift in Sources */,
 				040C7D64236F782300E2865D /* FloatLabelTextField.swift in Sources */,
 				04CE61BF2364BCDC00F534E9 /* UITextField.swift in Sources */,
 				049E4E68238AF416007DF3E3 /* HomeScreenViewController.swift in Sources */,
 				0480975D234538E90022FB43 /* SceneDelegate.swift in Sources */,
 				04CE61CA2364EDEF00F534E9 /* PasswordValidation.swift in Sources */,
+				04652DD4238DDFA30069452B /* RootCoordinator.swift in Sources */,
 				0480977A2345396E0022FB43 /* SignInViewController.swift in Sources */,
 				040DE7502377654A00618887 /* UIViewController.swift in Sources */,
 				047F3F7D237C92B500B0CCA4 /* ResetPasswordViewController.swift in Sources */,

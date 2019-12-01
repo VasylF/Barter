@@ -31,6 +31,7 @@ class LoginViewController: UIViewController, Storyboarded {
     }
 
     @IBAction private func logInButtonPressed(_ sender: Any) {
+        showActivityIndicator()
         hideHintLabels()
         var shouldLogIn = true
         
@@ -51,20 +52,19 @@ class LoginViewController: UIViewController, Storyboarded {
         
         guard shouldLogIn else { return }
         
-        Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
-            var message = ""
+        Auth.auth().signIn(withEmail: email, password: password) { [weak self] (user, error) in
+            self?.hideActivityIndicator()
             if error == nil {
-                message = "Login success"
+                self?.navigateToHomeScreen()
             } else {
-                message = error?.localizedDescription ?? "Login error"
+                let message = error?.localizedDescription ?? "Login error"
+                let alertController = UIAlertController(title: "Login", message: message, preferredStyle: .alert)
+                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                
+                alertController.addAction(defaultAction)
+                self?.present(alertController, animated: true, completion: nil)
             }
-            let alertController = UIAlertController(title: "Login", message: message, preferredStyle: .alert)
-            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-            
-            alertController.addAction(defaultAction)
-            self.present(alertController, animated: true, completion: nil)
         }
-        
     }
     
     @IBAction private func resetPasswordButtonPressed(_ sender: Any) {
@@ -78,5 +78,9 @@ class LoginViewController: UIViewController, Storyboarded {
     private func hideHintLabels() {
         emailHintMessage.hide()
         passwordHintMessage.hide()
+    }
+    
+    private func navigateToHomeScreen() {
+        coordinator?.navigateToHomeScreen()
     }
 }

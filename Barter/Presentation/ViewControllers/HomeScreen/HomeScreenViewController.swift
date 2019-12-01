@@ -8,8 +8,10 @@
 
 import UIKit
 
-class HomeScreenViewController: UIViewController {
+class HomeScreenViewController: UIViewController, Storyboarded {
 
+    weak var coordinator: TabBarCoordinator?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

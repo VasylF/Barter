@@ -43,6 +43,7 @@ class SignInViewController: UIViewController, Storyboarded {
     }
     
     @IBAction private func signInButtonPressed(_ sender: Any) {
+        showActivityIndicator()
         hideAndClearHintLabel()
         let firstName = firstNameTextField.text ?? ""
         let lastName = lastNameTextField.text ?? ""
@@ -87,14 +88,14 @@ class SignInViewController: UIViewController, Storyboarded {
 
         guard !shouldFailSignIn else { return }
         Auth.auth().createUser(withEmail: email, password: password) { [weak self] (user, error) in
+            self?.hideActivityIndicator()
             var message: String = ""
             if let user = user {
                 let changeRequest = user.user.createProfileChangeRequest()
                 changeRequest.displayName = "\(firstName) \(lastName)"
                 changeRequest.commitChanges { error in
                     guard let error = error else {
-                        message = "\(user.user.displayName ?? "User") was sucessfully logged in."
-                        self?.showAlertWith(message)
+                        self?.navigateToHomeScreen()
                         return
                     }
                     message = error.localizedDescription
@@ -122,6 +123,10 @@ private extension SignInViewController {
             self.stackView.setNeedsLayout()
             self.stackView.setNeedsDisplay()
         }
+    }
+    
+    func navigateToHomeScreen() {
+        coordinator?.navigateToHomeScreen()
     }
     
     func hideAndClearHintLabel() {

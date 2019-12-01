@@ -8,12 +8,13 @@
 
 import UIKit
 
-class AuthenticationCoordinator: NSObject, Coordinator {
-    var childCoordinator = [Coordinator]()
-    
+class AuthenticationCoordinator: NSObject, ParentCoordinator {
+    var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
     
-    init(navController: UINavigationController) {
+    weak var parentCoordinator: RootCoordinator?
+    
+    init(_ navController: UINavigationController) {
         navigationController = navController
     }
     
@@ -36,6 +37,9 @@ class AuthenticationCoordinator: NSObject, Coordinator {
         navigationController.pushViewController(signInViewController, animated: true)
     }
     
+    func navigateToHomeScreen() {
+        parentCoordinator?.navigateToHomeScreen(self)
+    }
 }
 
 extension AuthenticationCoordinator: UINavigationControllerDelegate {
