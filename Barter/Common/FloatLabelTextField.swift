@@ -1,7 +1,5 @@
 //
 //  FloatLabelTextField.swift
-//  
-//
 //  Created by Vasyl on 11/3/19.
 //
 
@@ -34,9 +32,9 @@ class FloatLabelTextField: UITextField {
     }
     
     fileprivate func shouldAnimateTo(top: Bool) {
-        guard (top && usernameLabelYAnchorConstraint.constant != -18) || !top else { return }
+        guard (top && usernameLabelYAnchorConstraint.constant >= 0) || !top else { return }
         
-        usernameLabelYAnchorConstraint.constant = top ? -18 : 0
+        usernameLabelYAnchorConstraint.constant = top ? -bounds.size.height / 3 : 0
         usernameLabelLeadingAnchor.constant = top ? 0 : 8
         let transform = top ? CGAffineTransform(scaleX: 0.8, y: 0.8)
                             : CGAffineTransform(scaleX: 1, y: 1)
@@ -47,8 +45,17 @@ class FloatLabelTextField: UITextField {
     @objc func textFieldBeginEditing(_ textField: FloatLabelTextField) {
         shouldAnimateTo(top: !(textField.text?.isEmpty ?? true))
     }
+}
+
+private extension FloatLabelTextField {
+    func configure() {
+        addSubview(floatLabel)
+        addTarget(self, action: #selector(textFieldBeginEditing(_ :)), for: .allEditingEvents)
+        placeholder = ""
+        translatesAutoresizingMaskIntoConstraints = false
+    }
     
-    private func addConstraint() {
+    func addConstraint() {
         usernameLabelYAnchorConstraint = floatLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: 0)
         usernameLabelLeadingAnchor = floatLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 5)
         
@@ -57,22 +64,10 @@ class FloatLabelTextField: UITextField {
             usernameLabelLeadingAnchor,
         ])
     }
-    
-    private func configure() {
-        addSubview(floatLabel)
-        addTarget(self, action: #selector(textFieldBeginEditing(_ :)), for: .allEditingEvents)
-        placeholder = ""
-        translatesAutoresizingMaskIntoConstraints = false
-    }
 }
 
 extension FloatLabelTextField: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         return textField.resignFirstResponder()
     }
-    
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-//        shouldAnimateTo(top: true)
-    }
-
 }

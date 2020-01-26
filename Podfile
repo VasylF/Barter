@@ -10,4 +10,13 @@ target 'Barter' do
     pod 'Firebase/Auth'
     pod 'Firebase/Database'
     pod 'Firebase/Storage'
+    pod 'Firebase/Firestore'
+
+    pod 'ProgressHUD'
+    pod 'MBProgressHUD'
+    pod 'IQAudioRecorderController'
+
+    pod 'JSQMessagesViewController', '7.3.3'
+    pod 'IDMPhotoBrowser'
+    pod 'ImagePicker'
 end

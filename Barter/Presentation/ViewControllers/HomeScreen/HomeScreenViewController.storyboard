@@ -15,17 +15,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3BX-d0-QaU">
-                                <rect key="frame" x="0.0" y="831" width="414" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3BX-d0-QaU">
+                                <rect key="frame" x="0.0" y="812" width="414" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hyX-i1-XxU"/>
+                                </constraints>
                                 <items>
-                                    <tabBarItem systemItem="favorites" id="EaV-dD-PdO"/>
+                                    <tabBarItem image="search_black" id="EaV-dD-PdO"/>
+                                    <tabBarItem title="Item" id="fXA-kr-yug"/>
                                     <tabBarItem systemItem="more" id="jkP-SH-PZi"/>
                                 </items>
                             </tabBar>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="dH6-WS-M2a" firstAttribute="bottom" secondItem="3BX-d0-QaU" secondAttribute="bottom" id="6dl-a6-cB4"/>
+                            <constraint firstItem="3BX-d0-QaU" firstAttribute="trailing" secondItem="dH6-WS-M2a" secondAttribute="trailing" id="Qrt-gJ-IPy"/>
+                            <constraint firstItem="3BX-d0-QaU" firstAttribute="leading" secondItem="dH6-WS-M2a" secondAttribute="leading" id="eYd-y3-Dbh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dH6-WS-M2a"/>
                     </view>
                 </viewController>
@@ -34,4 +42,7 @@
             <point key="canvasLocation" x="139" y="14"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="search_black" width="24" height="24"/>
+    </resources>
 </document>

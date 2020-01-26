@@ -18,4 +18,6 @@ struct Constants {
     
     struct Text {}
     
+    struct Firebase {}
+    
 }
