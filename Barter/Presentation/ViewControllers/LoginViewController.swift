@@ -6,7 +6,6 @@
 //  Copyright © 2019 VasylFuchenko. All rights reserved.
 //
 import UIKit
-import SwiftUI
 import Firebase
 
 class LoginViewController: UIViewController, Storyboarded {

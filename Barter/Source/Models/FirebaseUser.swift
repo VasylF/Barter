@@ -10,7 +10,7 @@ import Foundation
 import FirebaseAuth
 import FirebaseFirestore
 
-class FirebaseUser {
+class FirebaseUser: Codable {
     var firstName: String
     var lastName: String
     var fullName: String
@@ -36,9 +36,9 @@ class FirebaseUser {
     
     // Mark: - initializars
     
-    init(firstName: String, lastName: String, avatar: String = "", objectID: Bool, pushID: String?,
-         createdAt: Date, updatedAt: Date, email: String, phoneNumber: String, countryCode: String, country: String,
-         city: String, loginMethods: String) {
+    init(firstName: String, lastName: String, avatar: String = "", objectID: String, pushID: String?, createdAt: Date, updatedAt: Date, email: String,
+        phoneNumber: String, countryCode: String, country: String,
+        city: String, loginMethods: String) {
         
         self.firstName = firstName
         self.lastName = lastName
