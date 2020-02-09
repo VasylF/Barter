@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class AuthenticationCoordinator: NSObject, ParentCoordinator {
     var childCoordinators = [Coordinator]()
@@ -35,6 +36,13 @@ class AuthenticationCoordinator: NSObject, ParentCoordinator {
         let signInViewController = SignInViewController.instantiate()
         signInViewController.coordinator = self
         navigationController.pushViewController(signInViewController, animated: true)
+    }
+    
+    func createProfile(for user: AuthDataResult?) {
+        let createProfileViewController = CreateProfileViewController.instantiate()
+        createProfileViewController.coordinator = self
+        createProfileViewController.user = user
+        navigationController.present(createProfileViewController, animated: true, completion: nil)
     }
     
     func navigateToHomeScreen() {

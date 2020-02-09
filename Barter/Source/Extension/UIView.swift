@@ -10,16 +10,16 @@ import UIKit
 
 extension UIView {
     func hide(superView: UIView? = nil) {
-//        UIView.animate(withDuration: 0.3) {
-            isHidden = true
-//            self.superview?.layoutIfNeeded()
-//        }
+        UIView.animate(withDuration: 0.3) {
+            self.isHidden = true
+            self.superview?.layoutIfNeeded()
+        }
     }
     
     func show(superView: UIView? = nil) {
-//        UIView.animate(withDuration: 0.3) {
-            isHidden = false
-//            self.superview?.layoutIfNeeded()
-//        }
+        UIView.animate(withDuration: 0.3) {
+            self.isHidden = false
+            self.superview?.layoutIfNeeded()
+        }
     }
 }

@@ -51,19 +51,7 @@ class LoginViewController: UIViewController, Storyboarded {
         
         guard shouldLogIn else { return }
         
-        Auth.auth().signIn(withEmail: email, password: password) { [weak self] (user, error) in
-            self?.hideActivityIndicator()
-            if error == nil {
-                self?.navigateToHomeScreen()
-            } else {
-                let message = error?.localizedDescription ?? "Login error"
-                let alertController = UIAlertController(title: "Login", message: message, preferredStyle: .alert)
-                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-                
-                alertController.addAction(defaultAction)
-                self?.present(alertController, animated: true, completion: nil)
-            }
-        }
+        login(with: email, and: password)
     }
     
     @IBAction private func resetPasswordButtonPressed(_ sender: Any) {
@@ -73,13 +61,35 @@ class LoginViewController: UIViewController, Storyboarded {
     @IBAction private func createAccountButtonPressed(_ sender: Any) {
         coordinator?.createAccount()
     }
+}
+
+
+private extension LoginViewController {
+    func login(with email: String, and password: String) {
+        FirebaseManager.login(with: email, password: password) { [weak self] error in
+            guard let self = self else { return }
+            
+            self.hideActivityIndicator()
+            
+            if error == nil {
+                self.navigateToHomeScreen()
+            } else {
+                let message = error?.localizedDescription ?? "Login error"
+                let alertController = UIAlertController(title: "Login", message: message, preferredStyle: .alert)
+                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                
+                alertController.addAction(defaultAction)
+                self.present(alertController, animated: true, completion: nil)
+            }
+        }
+    }
     
-    private func hideHintLabels() {
+    func hideHintLabels() {
         emailHintMessage.hide()
         passwordHintMessage.hide()
     }
     
-    private func navigateToHomeScreen() {
+    func navigateToHomeScreen() {
         coordinator?.navigateToHomeScreen()
     }
 }

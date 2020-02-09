@@ -16,7 +16,9 @@
 		0443658723E59D4E00E78BA9 /* LogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443658623E59D4E00E78BA9 /* LogService.swift */; };
 		0443658B23E5C79900E78BA9 /* FirebaseCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443658A23E5C79900E78BA9 /* FirebaseCollection.swift */; };
 		0443658D23E605FB00E78BA9 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443658C23E605FB00E78BA9 /* Encodable.swift */; };
-		0443658F23E60D9400E78BA9 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443658E23E60D9400E78BA9 /* String.swift */; };
+		0443658F23E60D9400E78BA9 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443658E23E60D9400E78BA9 /* Date.swift */; };
+		0443659423E7038E00E78BA9 /* CreateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443659323E7038E00E78BA9 /* CreateProfileViewController.swift */; };
+		0443659623E7039C00E78BA9 /* CreateProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0443659523E7039C00E78BA9 /* CreateProfileViewController.storyboard */; };
 		044A1B142360E5C9001E9F2F /* String+PasswordValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A1B132360E5C9001E9F2F /* String+PasswordValidation.swift */; };
 		04652DD4238DDFA30069452B /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04652DD3238DDFA30069452B /* RootCoordinator.swift */; };
 		04652DD6238F2A950069452B /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04652DD5238F2A950069452B /* TabBarCoordinator.swift */; };
@@ -47,6 +49,8 @@
 		04CE61C42364CE6000F534E9 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE61C32364CE6000F534E9 /* UIView.swift */; };
 		04CE61C62364E23700F534E9 /* ExtenededPasswordValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE61C52364E23700F534E9 /* ExtenededPasswordValidator.swift */; };
 		04CE61CA2364EDEF00F534E9 /* PasswordValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE61C92364EDEF00F534E9 /* PasswordValidation.swift */; };
+		04F1219F23EA19F4002AB94E /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F1219E23EA19F4002AB94E /* CircleButton.swift */; };
+		04F121A123F091E0002AB94E /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F121A023F091E0002AB94E /* UIImage.swift */; };
 		04FCED5223DCF5310097DD03 /* FirebaseUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FCED5123DCF5310097DD03 /* FirebaseUser.swift */; };
 		04FCED5523DCFB5D0097DD03 /* Constants+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FCED5423DCFB5D0097DD03 /* Constants+Firebase.swift */; };
 		92384BA5C66F01B94C12EAE7 /* Pods_Barter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75798B9D348173198AB3974B /* Pods_Barter.framework */; };
@@ -62,7 +66,9 @@
 		0443658623E59D4E00E78BA9 /* LogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogService.swift; sourceTree = "<group>"; };
 		0443658A23E5C79900E78BA9 /* FirebaseCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseCollection.swift; sourceTree = "<group>"; };
 		0443658C23E605FB00E78BA9 /* Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
-		0443658E23E60D9400E78BA9 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		0443658E23E60D9400E78BA9 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		0443659323E7038E00E78BA9 /* CreateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileViewController.swift; sourceTree = "<group>"; };
+		0443659523E7039C00E78BA9 /* CreateProfileViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateProfileViewController.storyboard; sourceTree = "<group>"; };
 		044A1B132360E5C9001E9F2F /* String+PasswordValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+PasswordValidation.swift"; sourceTree = "<group>"; };
 		04652DD3238DDFA30069452B /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
 		04652DD5238F2A950069452B /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
@@ -95,6 +101,8 @@
 		04CE61C32364CE6000F534E9 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		04CE61C52364E23700F534E9 /* ExtenededPasswordValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtenededPasswordValidator.swift; sourceTree = "<group>"; };
 		04CE61C92364EDEF00F534E9 /* PasswordValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordValidation.swift; sourceTree = "<group>"; };
+		04F1219E23EA19F4002AB94E /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		04F121A023F091E0002AB94E /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		04FCED5123DCF5310097DD03 /* FirebaseUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUser.swift; sourceTree = "<group>"; };
 		04FCED5423DCFB5D0097DD03 /* Constants+Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Firebase.swift"; sourceTree = "<group>"; };
 		75798B9D348173198AB3974B /* Pods_Barter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Barter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,9 +136,18 @@
 			children = (
 				0443658223E593CB00E78BA9 /* UserDefaults.swift */,
 				0443658C23E605FB00E78BA9 /* Encodable.swift */,
-				0443658E23E60D9400E78BA9 /* String.swift */,
+				0443658E23E60D9400E78BA9 /* Date.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0443659023E7034000E78BA9 /* CreateProfile */ = {
+			isa = PBXGroup;
+			children = (
+				0443659323E7038E00E78BA9 /* CreateProfileViewController.swift */,
+				0443659523E7039C00E78BA9 /* CreateProfileViewController.storyboard */,
+			);
+			path = CreateProfile;
 			sourceTree = "<group>";
 		};
 		044A1B102360E52B001E9F2F /* Common */ = {
@@ -141,6 +158,7 @@
 				0443658123E593A500E78BA9 /* Extensions */,
 				04CE61C82364EDA900F534E9 /* PasswordValidator */,
 				040C7D63236F782300E2865D /* FloatLabelTextField.swift */,
+				04F1219E23EA19F4002AB94E /* CircleButton.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -246,6 +264,7 @@
 		048097732345396E0022FB43 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0443659023E7034000E78BA9 /* CreateProfile */,
 				049E4E66238AF3FD007DF3E3 /* HomeScreen */,
 				047F3F7E237C92CB00B0CCA4 /* ResetPasswordViewController */,
 				044A1B112360E54A001E9F2F /* SignInViewController */,
@@ -262,6 +281,7 @@
 				04CE61BE2364BCDC00F534E9 /* UITextField.swift */,
 				044A1B132360E5C9001E9F2F /* String+PasswordValidation.swift */,
 				040DE74F2377654A00618887 /* UIViewController.swift */,
+				04F121A023F091E0002AB94E /* UIImage.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -441,6 +461,7 @@
 				048097782345396E0022FB43 /* SignInViewController.storyboard in Resources */,
 				0480978B23453A9E0022FB43 /* GoogleService-Info.plist in Resources */,
 				0480977B2345396E0022FB43 /* LoginViewController.storyboard in Resources */,
+				0443659623E7039C00E78BA9 /* CreateProfileViewController.storyboard in Resources */,
 				04809764234538EA0022FB43 /* Preview Assets.xcassets in Resources */,
 				04809761234538EA0022FB43 /* Assets.xcassets in Resources */,
 			);
@@ -498,6 +519,7 @@
 				0443658B23E5C79900E78BA9 /* FirebaseCollection.swift in Sources */,
 				0443658723E59D4E00E78BA9 /* LogService.swift in Sources */,
 				0443658323E593CB00E78BA9 /* UserDefaults.swift in Sources */,
+				04F1219F23EA19F4002AB94E /* CircleButton.swift in Sources */,
 				0480977E234539810022FB43 /* UIColor+HEX.swift in Sources */,
 				048097892345398E0022FB43 /* Font.swift in Sources */,
 				04652DD6238F2A950069452B /* TabBarCoordinator.swift in Sources */,
@@ -508,8 +530,9 @@
 				0443658D23E605FB00E78BA9 /* Encodable.swift in Sources */,
 				049E4E68238AF416007DF3E3 /* HomeScreenViewController.swift in Sources */,
 				0443658023E5925100E78BA9 /* UserDefaultKey.swift in Sources */,
+				0443659423E7038E00E78BA9 /* CreateProfileViewController.swift in Sources */,
 				0480975D234538E90022FB43 /* SceneDelegate.swift in Sources */,
-				0443658F23E60D9400E78BA9 /* String.swift in Sources */,
+				0443658F23E60D9400E78BA9 /* Date.swift in Sources */,
 				04CE61CA2364EDEF00F534E9 /* PasswordValidation.swift in Sources */,
 				04652DD4238DDFA30069452B /* RootCoordinator.swift in Sources */,
 				0480977A2345396E0022FB43 /* SignInViewController.swift in Sources */,
@@ -524,6 +547,7 @@
 				049E4E60238AC42E007DF3E3 /* AuthenticationCoordinator.swift in Sources */,
 				04CE61C42364CE6000F534E9 /* UIView.swift in Sources */,
 				04FCED5223DCF5310097DD03 /* FirebaseUser.swift in Sources */,
+				04F121A123F091E0002AB94E /* UIImage.swift in Sources */,
 				048097872345398E0022FB43 /* Color.swift in Sources */,
 				0443658523E59A2A00E78BA9 /* UserDefaultsManager.swift in Sources */,
 				044A1B142360E5C9001E9F2F /* String+PasswordValidation.swift in Sources */,

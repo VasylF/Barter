@@ -1,5 +1,5 @@
 //
-//  String.swift
+//  Date.swift
 //  Barter
 //
 //  Created by Vasyl on 2/1/20.
@@ -8,8 +8,8 @@
 
 import Foundation
 
-extension String {
-    var formattedDate: DateFormatter {
+extension Date {
+    static var formattedDate: DateFormatter {
         let dateFormat = "yyyyMMddHHmss"
         let dateFormatter = DateFormatter()
         dateFormatter.timeZone = TimeZone(secondsFromGMT: TimeZone.current.secondsFromGMT())

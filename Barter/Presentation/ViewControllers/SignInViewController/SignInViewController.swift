@@ -43,15 +43,15 @@ class SignInViewController: UIViewController, Storyboarded {
     }
     
     @IBAction private func signInButtonPressed(_ sender: Any) {
-        showActivityIndicator()
+//        navigateToCreateProfileScreen()
         hideAndClearHintLabel()
         let firstName = firstNameTextField.text ?? ""
         let lastName = lastNameTextField.text ?? ""
         let email = emailTextField.text ?? ""
         let password = passwordTextField.text ?? ""
-        
+
         var shouldFailSignIn = false
-        
+
         // First Name
         if firstName.isEmpty {
             shouldShow(label: firstNameHintLabel)
@@ -63,7 +63,7 @@ class SignInViewController: UIViewController, Storyboarded {
             shouldShow(label: lastNameHintLabel)
             shouldFailSignIn = true
         }
-        
+
         // Email
         if email.isEmpty || !email.isValidEmail {
             emailHintLabel.text = email.isEmpty
@@ -72,10 +72,10 @@ class SignInViewController: UIViewController, Storyboarded {
             shouldShow(label: emailHintLabel)
             shouldFailSignIn = true
         }
-                
+
         // Password
         let passwordValidation = ExtenededPasswordValidator(password)
-        
+
         if password.isEmpty || !passwordValidation.errors.isEmpty {
             var errors: [String] = []
             passwordValidation.errors.forEach { errors.append("*\($0.description)") }
@@ -87,6 +87,9 @@ class SignInViewController: UIViewController, Storyboarded {
         }
 
         guard !shouldFailSignIn else { return }
+
+        showActivityIndicator()
+
         Auth.auth().createUser(withEmail: email, password: password) { [weak self] (user, error) in
             self?.hideActivityIndicator()
             var message: String = ""
@@ -95,7 +98,7 @@ class SignInViewController: UIViewController, Storyboarded {
                 changeRequest.displayName = "\(firstName) \(lastName)"
                 changeRequest.commitChanges { error in
                     guard let error = error else {
-                        self?.navigateToHomeScreen()
+                        self?.navigateToCreateProfileScreen(for: user)
                         return
                     }
                     message = error.localizedDescription
@@ -125,8 +128,8 @@ private extension SignInViewController {
         }
     }
     
-    func navigateToHomeScreen() {
-        coordinator?.navigateToHomeScreen()
+    func navigateToCreateProfileScreen(for user: AuthDataResult?) {
+        coordinator?.createProfile(for: user)
     }
     
     func hideAndClearHintLabel() {
